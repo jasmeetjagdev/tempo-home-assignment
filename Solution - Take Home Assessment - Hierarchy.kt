@@ -97,7 +97,7 @@ fun Hierarchy.filter(nodeIdPredicate: (Int) -> Boolean): Hierarchy {
 
     }else {
         // if the predicate is not satisfied, then we skip all the children of that node.
-        // The identification of the childer is by comparing the depth value.
+        // The identification of the children is by comparing the depth value.
         // If the depth value is greater than the depth of the current node, then it is a child of that node.
         // We keep skipping until we find a node with depth less than or equal to the current node.
         // This works because the list already has the elements in DFS order,
